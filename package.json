@@ -8,7 +8,6 @@
   "scripts": {
     "build": "pnpm run --filter=\"./packages/*\" build",
     "dev": "pnpm run --filter=\"./packages/*\" dev",
-    "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
     "test": "vitest",
     "publish": "pnpm build && changeset publish",
@@ -19,11 +18,9 @@
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.2",
     "@rollup/pluginutils": "^5.1.0",
-    "@sxzz/eslint-config": "^3.4.0",
     "@sxzz/prettier-config": "^1.0.4",
     "@types/node": "^18.17.12",
     "bumpp": "^9.3.0",
-    "eslint": "^8.48.0",
     "fast-glob": "^3.3.1",
     "prettier": "^3.0.2",
     "rollup": "^4.17.2",
@@ -32,9 +29,5 @@
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "vitest": "^0.34.3"
-  },
-  "engines": {
-    "node": ">=16.14.0"
-  },
-  "prettier": "@sxzz/prettier-config"
+  }
 }
