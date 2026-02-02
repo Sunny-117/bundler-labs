@@ -1,6 +1,3 @@
 packages:
   - packages/*
-  - playground
   - tutorial/*
-  - defect/*
-  - app/*
