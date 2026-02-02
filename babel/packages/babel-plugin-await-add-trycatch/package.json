@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-await-add-trycatch",
+  "version": "1.0.0",
+  "description": "Babel plugin helps automatically add try catch when async await",
+  "main": "src/index.js",
+  "keywords": [
+    "babel-plugin-await-add-trycatch",
+    "add try catch",
+    "async await add try catch",
+    "async await add try/catch"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-template": "^6.26.0",
+    "deepmerge": "^4.2.2"
+  }
+}

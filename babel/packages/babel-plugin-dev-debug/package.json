@@ -1,0 +1,25 @@
+{
+  "name": "babel-plugin-dev-debug",
+  "version": "1.0.1",
+  "description": "an babel plugin that for dev debug",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "debug",
+    "babel-plugin",
+    "dev"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "jest": "^26.6.3"
+  }
+}

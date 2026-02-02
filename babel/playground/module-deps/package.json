@@ -1,0 +1,22 @@
+{
+  "name": "module-deps",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile": "esno index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@babel/generator": "^7.28.0",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.2",
+    "@swc/core": "^1.13.2",
+    "@types/node": "^24.1.0",
+    "esno": "^4.8.0",
+    "typescript": "^5.8.3"
+  }
+}
