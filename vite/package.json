@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugins-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca",
+  "description": "Monorepo of vite-plugins",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm run --filter=\"./packages/*\" build",
+    "dev": "pnpm run --filter=\"./packages/*\" dev",
+    "lint:fix": "pnpm run lint --fix",
+    "test": "vitest",
+    "publish": "pnpm build && changeset publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.17",
+    "fast-glob": "^3.3.1",
+    "pnpm": "^8.7.5",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
+  }
+}

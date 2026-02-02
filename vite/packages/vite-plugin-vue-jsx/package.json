@@ -1,0 +1,37 @@
+{
+  "name": "vitejs-plugin-vue-jsx",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.7.0",
+  "description": "My awesome typescript library",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "require": "./dist/index.d.ts",
+        "import": "./dist/index.d.mts"
+      },
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.19.0"
+  }
+}
